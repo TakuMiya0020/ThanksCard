@@ -1,0 +1,29 @@
+name: タスクテンプレート
+description: 通常の開発タスク用
+title: "[TASK] "
+labels: ["task"]
+
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的
+      placeholder: なぜこのタスクをやるのか
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: 作業内容
+      placeholder: やることを箇条書き
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: 完了条件
+      placeholder: どうなったら完了か
+    validations:
+      required: true
