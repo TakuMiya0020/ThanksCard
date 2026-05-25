@@ -1,0 +1,33 @@
+name: 新機能タスク
+description: 開発用テンプレート
+title: "[FEATURE] "
+labels: ["feature"]
+
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的
+      description: なぜこのタスクをやるのか
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 作業内容
+      description: チェック形式で管理できます
+      value: |
+        - [ ] API作成
+        - [ ] フロント実装
+        - [ ] 動作確認
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: 完了条件
+      value: |
+        - [ ] フロントからAPIが呼べる
+        - [ ] エラーがない
