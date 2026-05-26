@@ -1,0 +1,42 @@
+name: タスク（開発作業）
+description: 実装・修正などの単位タスク
+title: "[TASK] "
+labels: ["task"]
+
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的
+      description: このタスクの目的
+      placeholder: 何のためにやるか
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 作業内容
+      description: チェックリスト形式で管理
+      value: |
+        - [ ] 実装
+        - [ ] テスト
+        - [ ] 動作確認
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 完了条件（Acceptance Criteria）
+      value: |
+        - [ ] 想定通り動作する
+        - [ ] エラーが出ない
+        - [ ] PRがマージされている
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足
+      description: 注意点・参考情報など
+      placeholder: 任意

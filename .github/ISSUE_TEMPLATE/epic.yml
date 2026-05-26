@@ -1,0 +1,44 @@
+name: Epic（大きな機能）
+description: 機能単位の大きなタスク管理用
+title: "[EPIC] "
+labels: ["epic"]
+
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的
+      description: このEpicのゴール・背景
+      placeholder: なぜこの機能を作るのか
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: スコープ（含まれるタスク）
+      description: このEpicに含まれる作業一覧
+      value: |
+        - 
+        - 
+        - 
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: 対象外（やらないこと）
+      description: スコープ外を明確にする
+      value: |
+        - 
+        - 
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: 完了条件（Definition of Done）
+      value: |
+        - 全ての子タスクが完了している
+        - 動作確認が完了している
+        - エラーがない状態
